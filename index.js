@@ -15,7 +15,6 @@ function game() {
     result = "Second Player Wins";
   }
   let elementH1 = document.querySelector("h1");
-
   return elementH1.innerHTML = result;
 }
 
