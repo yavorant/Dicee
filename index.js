@@ -1,5 +1,5 @@
 function player(playerNumber) {
-  const randomNumber1 = Math.floor(Math.random() * Math.floor(6)) + 1; //random number from 1 to 6
+  const randomNumber1 = Math.floor(Math.random() * 6) + 1; //random number from 1 to 6
   const attribute = document.querySelector(`.img${playerNumber}`);
   attribute.setAttribute("src", `img/dice${randomNumber1}.png`);
   return randomNumber1;
@@ -10,9 +10,9 @@ function game() {
   if (firsrPlayerResult === secondPlayerResult) {
     result = "Draw";
   } else if (firsrPlayerResult > secondPlayerResult) {
-    result = "First Player Wins";
+    result = "🚩First Player Wins"; // : than type the keywords to find emoji
   } else {
-    result = "Second Player Wins";
+    result = "Second Player Wins🚩";
   }
   let elementH1 = document.querySelector("h1");
   return elementH1.innerHTML = result;
